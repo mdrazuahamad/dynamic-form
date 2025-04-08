@@ -71,7 +71,7 @@ const DynamicForm = () => {
 
   return (
     <div>
-      <h2>Registration Form</h2>;
+      <h2>Registration Form</h2>
       <form onSubmit={handleSubmit}>
         {formData.map((item, index) => (
           <div key={index}>
