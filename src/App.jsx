@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import DynamicForm from "./Component/DynamicForm";
 
 const App = () => {
   const [formData, setFormData] = useState({
@@ -28,8 +29,8 @@ const App = () => {
         border: "1px solid #ccc",
         borderRadius: "8px",
       }}>
-      <h1>Welcome to the Dynamic Form</h1>
-      <form onSubmit={handleSubmit}>
+      <DynamicForm />
+      {/* <form onSubmit={handleSubmit}>
         <div>
           <label>Enter Your Name</label>
           <input
@@ -62,7 +63,7 @@ const App = () => {
         </div>
 
         <button type='submit'>Submit</button>
-      </form>
+      </form> */}
     </div>
   );
 };
