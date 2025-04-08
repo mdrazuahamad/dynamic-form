@@ -28,7 +28,7 @@ const formFields = {
   },
 };
 
-const trasformObject = (obj) => {
+const transformObject = (obj) => {
   return Object.keys(obj).reduce((acc, curr) => {
     acc[curr] = {
       ...obj[curr],
@@ -45,7 +45,7 @@ const mapObjectToArray = (obj) => {
 console.log(mapObjectToArray(formFields));
 
 const DynamicForm = () => {
-  const [formState, setFormState] = useState(trasformObject(formFields));
+  const [formState, setFormState] = useState(transformObject(formFields));
   const formData = mapObjectToArray(formState);
 
   console.log(formState);
